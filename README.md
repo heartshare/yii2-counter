@@ -26,6 +26,10 @@ Add to your composer.json:
 },
 ```
 
+```bash
+composer update
+```
+
 ### 2. Configure
 
 Add following lines to your main configuration file (config/web.php):
@@ -66,7 +70,7 @@ Usage
 Once the extension is installed, simply use it in your code by:
 
 ```php
-<?php 
+<?php
 \Yii::$app->counter->increase('nameofcounter');
 \Yii::$app->counter->decrease('nameofcounter');
 
