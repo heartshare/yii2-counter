@@ -26,6 +26,8 @@ Add to your composer.json:
 },
 ```
 
+Then execute:
+
 ```bash
 composer update
 ```
