@@ -36,8 +36,8 @@ class Module extends \yii\base\Module
 
     /** @var array The rules to be used in URL management. */
     public $urlRules = [
+        'counters/<page:\d+>' => 'counter/index',
         'counters' => 'counter/index',
         'counter/<id:\d+>' => 'counter/view',
-        'counters/<page:\d+>' => 'counter/index',
     ];
 }
