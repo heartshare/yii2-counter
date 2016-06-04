@@ -16,9 +16,6 @@ use yii\base\BootstrapInterface;
 //use yii\console\Application as ConsoleApplication;
 use yii\i18n\PhpMessageSource;
 
-//  * It also creates some url rules which will be applied
-//  * when UrlManager.enablePrettyUrl is enabled.
-
 /**
  * Bootstrap class registers module and counter application component.
  *
@@ -72,7 +69,7 @@ class Bootstrap implements BootstrapInterface
 
                 $configUrlRule['class'] = 'yii\web\GroupUrlRule';
                 $rule = Yii::createObject($configUrlRule);
-                
+
                 $app->urlManager->addRules([$rule], false);
             }
 

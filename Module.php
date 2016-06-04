@@ -17,7 +17,6 @@ namespace jkmssoft\counter;
  * @property string[] $modelMap
  *
  * @author jkmssoft
- * @todo urlRules: view, edit, delete, list ((in)visible)
  */
 class Module extends \yii\base\Module
 {
@@ -37,5 +36,8 @@ class Module extends \yii\base\Module
 
     /** @var array The rules to be used in URL management. */
     public $urlRules = [
+        'counters' => 'counter/index',
+        'counter/<id:\d+>' => 'counter/view',
+        'counters/<page:\d+>' => 'counter/index',
     ];
 }
